@@ -1,0 +1,250 @@
+<style>
+#game {
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+}
+.cell input {
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  font-size: 15px;
+}
+
+html {
+  background-color: GhostWhite;
+  text-align: center;
+  color: DarkBlue
+
+}
+.cell3 input {
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-right: 3px solid black;
+  text-align: center;
+  font-size: 15px;
+}
+
+.cell32 input {
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  text-align: center;
+  font-size: 15px;
+}
+.cell2 input {
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom: 3px solid black;
+  text-align: center;
+  font-size: 15px;
+}
+
+#submit{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  padding: 3em;
+  border-spacing: 10px;
+  font-size: 100%;
+  color: DarkBlue
+}
+
+</style>
+<h1>Welcome to Sudoku Solver!</h1>
+<h3>Enter the values that you are sure of and we will return the finished puzzle.</h3>
+<form action="/form" method="post">
+  <div id="game">
+    <div class="cell">
+      <input name="cell0" type="text" maxlength="1">
+    </div>
+
+    <div class="cell">
+      <input name="cell1" type="integer" maxlength="1">
+    </div>
+     <div class="cell3">
+      <input name="cell2" type="integer" maxlength="1">
+    </div>
+     <div class="cell">
+      <input name="cell3" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell4" type="integer" maxlength="1">
+    </div> <div class="cell3">
+      <input name="cell5" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell6" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell7" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell8" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell9" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell10" type="integer" maxlength="1">
+    </div> <div class="cell3">
+      <input name="cell11" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell12" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell13" type="integer" maxlength="1">
+    </div> <div class="cell3">
+      <input name="cell14" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell15" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell16" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell17" type="integer" maxlength="1">
+    </div> <div class="cell2">
+      <input name="cell18" type="integer" maxlength="1">
+    </div> <div class="cell2">
+      <input name="cell19" type="integer" maxlength="1">
+    </div> <div class="cell32">
+      <input name="cell20" type="integer" maxlength="1">
+    </div> <div class="cell2">
+      <input name="cell21" type="integer" maxlength="1">
+    </div> <div class="cell2">
+      <input name="cell22" type="integer" maxlength="1">
+    </div> <div class="cell32">
+      <input name="cell23" type="integer" maxlength="1">
+    </div> <div class="cell2">
+      <input name="cell24" type="integer" maxlength="1">
+    </div> <div class="cell2">
+      <input name="cell25" type="integer" maxlength="1">
+    </div> <div class="cell2">
+      <input name="cell26" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell27" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell28" type="integer" maxlength="1">
+    </div> <div class="cell3">
+      <input name="cell29" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell30" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell31" type="integer" maxlength="1">
+    </div> <div class="cell3">
+      <input name="cell32" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell33" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell34" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell35" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell36" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell37" type="integer" maxlength="1">
+    </div> <div class="cell3">
+      <input name="cell38" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell39" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell40" type="integer" maxlength="1">
+    </div> <div class="cell3">
+      <input name="cell41" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell42" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell43" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell44" type="integer" maxlength="1">
+    </div> <div class="cell2">
+      <input name="cell45" type="integer" maxlength="1">
+    </div> <div class="cell2">
+      <input name="cell46" type="integer" maxlength="1">
+    </div> <div class="cell32">
+      <input name="cell47" type="integer" maxlength="1">
+    </div> <div class="cell2">
+      <input name="cell48" type="integer" maxlength="1">
+    </div> <div class="cell2">
+      <input name="cell49" type="integer" maxlength="1">
+    </div>
+     <div class="cell32">
+      <input name="cell50" type="integer" maxlength="1">
+    </div>
+     <div class="cell2">
+      <input name="cell51" type="integer" maxlength="1">
+    </div>
+     <div class="cell2">
+      <input name="cell52" type="integer" maxlength="1">
+    </div>
+     <div class="cell2">
+      <input name="cell53" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell54" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell55" type="integer" maxlength="1">
+    </div> <div class="cell3">
+      <input name="cell56" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell57" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell58" type="integer" maxlength="1">
+    </div> <div class="cell3">
+      <input name="cell59" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell60" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell61" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell62" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell63" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell64" type="integer" maxlength="1">
+    </div> <div class="cell3">
+      <input name="cell65" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell66" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell67" type="integer" maxlength="1">
+    </div> <div class="cell3">
+      <input name="cell68" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell69" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell70" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell71" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell72" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell73" type="integer" maxlength="1">
+    </div> <div class="cell3">
+      <input name="cell74" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell75" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell76" type="integer" maxlength="1">
+    </div> <div class="cell3">
+      <input name="cell77" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell78" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell79" type="integer" maxlength="1">
+    </div> <div class="cell">
+      <input name="cell80" type="integer" maxlength="1">
+  </div>
+  </br>
+  </br>
+  <input type="submit" value="Solve puzzle" id="submit">
+</form>

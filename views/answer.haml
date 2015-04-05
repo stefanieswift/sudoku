@@ -1,0 +1,8 @@
+@b = em(@a)
+
+%table
+  %tbody
+    - @b.each_slice(9) |row|
+      %tr
+        - row.each do |column|
+          %td= column

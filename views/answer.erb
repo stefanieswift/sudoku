@@ -1,0 +1,344 @@
+<style>
+#game {
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  height: 360px;
+  cell-padding: 0;
+  cell-spacing: 0;
+}
+
+tr {
+    cell-padding: 0;
+  cell-spacing: 0;
+}
+td {
+  /*display: inline-block;*/
+  float: left;
+  width: 10.11%;
+  height: 10.11%;
+/*  border-style: black;
+  border-width: 1px;*/
+  text-align: center;
+  font-size: 15px;
+  background-color: white;
+  text-align: center;
+ /* padding-top: 3%;*/
+  border: 1px solid black;
+  cell-padding: 0;
+  cell-spacing: 0;
+  color: black;
+}
+
+html {
+  background-color: GhostWhite;
+  color: DarkBlue
+}
+
+.third {
+  border-left: 3px solid black;
+}
+
+.bottom td{
+  border-bottom: 3px solid black;
+}
+
+h2 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+  align:center;
+  color: DarkBlue;
+  width: 360px;
+  text-align: center
+}
+
+#submit{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 3em;
+  border-spacing: 10px;
+  font-size: 100%;
+  color: DarkBlue
+}
+
+</style>
+
+<h2>Here is the answer to your puzzle:</h2>
+<form method="link" action="/"><table id="game"  cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+     <%= @b[0][0] %>
+    </td>
+    <td>
+     <%= @b[0][1] %>
+    </td>
+    <td>
+     <%= @b[0][2] %>
+    </td>
+    <td  class = "third">
+     <%= @b[0][3] %>
+    </td>
+    <td>
+     <%= @b[0][4] %>
+    </td>
+    <td>
+     <%= @b[0][5] %>
+    </td>
+    <td  class = "third">
+     <%= @b[0][6] %>
+    </td>
+    <td>
+     <%= @b[0][7] %>
+    </td>
+    <td>
+     <%= @b[0][8] %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+     <%= @b[1][0] %>
+    </td>
+    <td>
+     <%= @b[1][1] %>
+    </td>
+    <td>
+     <%= @b[1][2] %>
+    </td>
+    <td  class = "third">
+     <%= @b[1][3] %>
+    </td>
+    <td>
+     <%= @b[1][4] %>
+    </td>
+    <td>
+     <%= @b[1][5] %>
+    </td>
+    <td  class = "third">
+     <%= @b[1][6] %>
+    </td>
+    <td>
+     <%= @b[1][7] %>
+    </td>
+    <td>
+     <%= @b[1][8] %>
+    </td>
+  </tr>
+  <tr class ="bottom">
+    <td>
+     <%= @b[2][0] %>
+    </td>
+    <td>
+     <%= @b[2][1] %>
+    </td>
+    <td>
+     <%= @b[2][2] %>
+    </td>
+    <td  class = "third">
+     <%= @b[2][3] %>
+    </td>
+    <td>
+     <%= @b[2][4] %>
+    </td>
+    <td>
+     <%= @b[2][5] %>
+    </td>
+    <td  class = "third">
+     <%= @b[2][6] %>
+    </td>
+    <td>
+     <%= @b[2][7] %>
+    </td>
+    <td>
+     <%= @b[2][8] %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+     <%= @b[3][0] %>
+    </td>
+    <td>
+     <%= @b[3][1] %>
+    </td>
+    <td>
+     <%= @b[3][2] %>
+    </td>
+    <td  class = "third">
+     <%= @b[3][3] %>
+    </td>
+    <td>
+     <%= @b[3][4] %>
+    </td>
+    <td>
+     <%= @b[3][5] %>
+    </td>
+    <td  class = "third">
+     <%= @b[3][6] %>
+    </td>
+    <td>
+     <%= @b[3][7] %>
+    </td>
+    <td>
+     <%= @b[3][8] %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+     <%= @b[4][0] %>
+    </td>
+    <td>
+     <%= @b[4][1] %>
+    </td>
+    <td>
+     <%= @b[4][2] %>
+    </td>
+    <td  class = "third">
+     <%= @b[4][3] %>
+    </td>
+    <td>
+     <%= @b[4][4] %>
+    </td>
+    <td>
+     <%= @b[4][5] %>
+    </td>
+    <td  class = "third">
+     <%= @b[4][6] %>
+    </td>
+    <td>
+     <%= @b[4][7] %>
+    </td>
+    <td>
+     <%= @b[4][8] %>
+    </td>
+  </tr>
+  <tr class ="bottom">
+    <td>
+     <%= @b[5][0] %>
+    </td>
+    <td>
+     <%= @b[5][1] %>
+    </td>
+    <td>
+     <%= @b[5][2] %>
+    </td>
+    <td  class = "third">
+     <%= @b[5][3] %>
+    </td>
+    <td>
+     <%= @b[5][4] %>
+    </td>
+    <td>
+     <%= @b[5][5] %>
+    </td>
+    <td  class = "third">
+     <%= @b[5][6] %>
+    </td>
+    <td>
+     <%= @b[5][7] %>
+    </td>
+    <td>
+     <%= @b[5][8] %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+     <%= @b[6][0] %>
+    </td>
+    <td>
+     <%= @b[6][1] %>
+    </td>
+    <td>
+     <%= @b[6][2] %>
+    </td>
+    <td  class = "third">
+     <%= @b[6][3] %>
+    </td>
+    <td>
+     <%= @b[6][4] %>
+    </td>
+    <td>
+     <%= @b[6][5] %>
+    </td>
+    <td  class = "third">
+     <%= @b[6][6] %>
+    </td>
+    <td>
+     <%= @b[6][7] %>
+    </td>
+    <td>
+     <%= @b[6][8] %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+     <%= @b[7][0] %>
+    </td>
+    <td>
+     <%= @b[7][1] %>
+    </td>
+    <td>
+     <%= @b[7][2] %>
+    </td>
+    <td  class = "third">
+     <%= @b[7][3] %>
+    </td>
+    <td>
+     <%= @b[7][4] %>
+    </td>
+    <td>
+     <%= @b[7][5] %>
+    </td>
+    <td  class = "third">
+     <%= @b[7][6] %>
+    </td>
+    <td>
+     <%= @b[7][7] %>
+    </td>
+    <td>
+     <%= @b[0][8] %>
+    </td>
+  </tr>
+  <tr>
+    <td>
+     <%= @b[8][0] %>
+    </td>
+    <td>
+     <%= @b[8][1] %>
+    </td>
+    <td>
+     <%= @b[8][2] %>
+    </td>
+    <td  class = "third">
+     <%= @b[8][3] %>
+    </td>
+    <td>
+     <%= @b[8][4] %>
+    </td>
+    <td>
+     <%= @b[8][5] %>
+    </td>
+    <td  class = "third">
+     <%= @b[8][6] %>
+    </td>
+    <td>
+     <%= @b[8][7] %>
+    </td>
+    <td>
+     <%= @b[8][8] %>
+    </td>
+  </tr>
+</table>
+<!-- <h3><a href="http://solve-sudoku.herokuapp.com">Solve Another Puzzle</a></h3> -->
+<div>
+<input type="submit" value="Solve Another Puzzle" id="submit">
+</div>
+</form>
