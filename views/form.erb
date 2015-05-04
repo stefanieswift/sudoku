@@ -1,4 +1,9 @@
 <style>
+@import url(http://fonts.googleapis.com/css?family=Dosis:200,400,500);
+*{
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+}
 #game {
   margin-left: auto;
   margin-right: auto;
@@ -15,11 +20,25 @@
   font-size: 15px;
 }
 
-html {
-  background-color: GhostWhite;
-  text-align: center;
-  color: DarkBlue
+body > h1 {
+    float: left;
+    text-align:left;
+    width: 100%;
+    border-bottom: 2px solid MidnightBlue;
+}
 
+body > h1 a {
+    color:#0066CC;
+    text-decoration: none;
+}
+body > h1 a:hover {
+    color:MidnightBlue;
+    text-decoration: none;
+}
+
+body > h3{
+  clear:both;
+  text-align: center;
 }
 .cell3 input {
   display: inline-block;
@@ -62,14 +81,17 @@ html {
   margin-right: auto;
   width: 100%;
 
-  padding: 3em;
-  border-spacing: 10px;
+  padding: 1em;
+  border: 2px solid MidnightBlue;
   font-size: 100%;
-  color: DarkBlue
+  background-color: white;
+  }
+#submit:hover{
+    color:#0066CC;
 }
 
 </style>
-<h1>Welcome to Sudoku Solver!</h1>
+<h1><a href="/">Sudoku Solver</a></h1>
 <h3>Enter the values that you are sure of and we will return the finished puzzle.</h3>
 <form action="/form" method="post">
   <div id="game">
